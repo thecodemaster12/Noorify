@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+body {
+  @apply bg-[#222831];
+}
+
+.block-content {
+  @apply bg-[#393E46] p-4 rounded-md;
+}
+
+.text-primary {
+  @apply text-[#00ADB5];
+}
+
+.text-secondary {
+  @apply text-[#EEEEEE];
+}
+
+.time-block {
+  @apply flex flex-col items-center;
+}
+
+.tile-block-value {
+  @apply text-4xl font-bold;
+}
+
+.tile-block-label {
+  @apply text-sm text-gray-100;
+}
+
+table {
+  font-family: "Poppins", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead th {
+  padding: 8px;
+  background-color: #00ADB5;
+  color: #000;
+  border-color: #000;
+} 
+
+tbody th {
+  border: 1px solid #00ADB5;
+  padding: 8px;
+}
+
+tbody td {
+  border: 1px solid #00ADB5;
+  padding: 8px;
+}
+
+tbody .active {
+  @apply bg-[#00ADB5] font-bold text-gray-100;
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+tr:hover:not(.active) {
+  background-color: #00acb54d;
+}
