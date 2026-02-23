@@ -120,28 +120,28 @@ const App = () => {
   return (
     <main>
       <section className="container mx-auto">
-        <h1 className="text-center font-bold text-2xl text-sm-md text-primary mb-6">Ramadan Mubarak</h1>
+        <h1 className="text-center font-bold md:text-2xl text-xl text-primary mb-6">Ramadan Mubarak</h1>
 
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="block-content">
-            <h2 className="text-center font-bold text-lg text-sm-md text-secondary">
+            <h2 className="text-center font-bold text-lg text-secondary">
               <SunIcon size={24} className="text-primary inline-block mr-2" />
               Todays Sehri Time
             </h2>
-            <p className="text-center font-bold text-lg text-sm-md text-primary">{currentRamadanDay.sehri_end_time}</p>
+            <p className="text-center font-bold text-lg text-primary">{currentRamadanDay.sehri_end_time}</p>
           </div>
           <div className="block-content">
-            <h2 className="text-center font-bold text-lg text-sm-md text-secondary">
+            <h2 className="text-center font-bold text-lg text-secondary">
               <MoonStarsIcon size={24} className="text-primary inline-block mr-2" />
               Todays Iftar Time
             </h2>
-            <p className="text-center font-bold text-lg text-sm-md text-primary">{currentRamadanDay.iftar_time}</p>
+            <p className="text-center font-bold text-lg text-primary">{currentRamadanDay.iftar_time}</p>
           </div>
         </div>
 
         <div className="block-content">
           {/* 3. Updated Countdown UI */}
-          <h2 className="text-center font-bold text-2xl sm:text-lg text-sm-md text-secondary">
+          <h2 className="text-center font-bold text-2xl sm:text-lg text-secondary">
             Time Remaining to {nextEvent}
           </h2>
           <div className="flex justify-center items-baseline gap-2 mt-4 mb-4">
@@ -175,7 +175,7 @@ const App = () => {
             <div className="progress-bar bg-gray-200 h-4 rounded-2xl overflow-hidden">
               <div className='progress bg-[#00ADB5] h-4 rounded-2xl transition-all duration-1000' style={{ width: `${progress}%` }}></div>
             </div>
-            <h4 className="text-center font-bold text-lg text-sm-md text-secondary mt-2">
+            <h4 className="text-center font-bold text-lg text-secondary mt-2">
               {progress > 0 && progress < 100 ? `${Math.floor(progress)}% Completed` : nextEvent === "Iftar" ? "Fasting in Progress" : "Waiting for Fast"}
             </h4>
           </div>
